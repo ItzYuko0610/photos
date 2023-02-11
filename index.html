@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Image gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            font-family: 'Zeyada', cursive;
+            margin: 0;
+            background-color: darkolivegreen;
+            height: auto;
+        }
+
+        h1,h2{
+            font-weight: 400;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        img{
+            display: block;
+            width: 100%;
+        }
+
+        main{
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 30px 0px 40px olive green greenyellow;
+        }
+
+        #landing{
+            background: chartreuse;
+        }
+
+        #landing-text{
+            display: flex;
+            flex: 0 1 40vw;
+            height: 50vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        #landing-text2{
+            color: darkgreen;
+        }
+
+        #landing-img{
+            background: url("https://th.bing.com/th/id/R.715c2356cd9c957e5d917212c5f94b47?rik=O%2b1Jt6zuG71ciw&pid=ImgRaw&r=0");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 50vh;
+            flex: 0 1 60vw;
+            margin: 0;
+        }
+
+        .btn {
+    padding: 0.5rem 2rem;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: 1px dotted #fff;
+    border-right: 1px dotted #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+footer p a {
+    text-decoration: none;
+    color: red;
+}
+
+/*Screen Sizes 500px +*/
+
+@media(min-width: 31.25rem) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+/*Screen Sizes 700px +*/
+
+@media(min-width: 43.75rem) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <main>
+<div id="landing">
+    <div id="landing-text">
+        <div id="landing-text-inner">
+        <h1>My Photography Website</h1>
+        <h2>Beautiful Images</h2>
+        <a href="#images" class="btn" id="veiw-work">VIEW WORK</a>
+    </div>
+</div>
+
+<div id="landing-img"></div>
+</div>
+<div id="images">
+    <div id="header">
+        <h2>My work</h2>
+    </div>
+    <img src="https://th.bing.com/th/id/OIP.UijWrvDg795bzMQiDe8sPwHaEJ?pid=ImgDet&rs=1">
+    <div class="caption"><h2>Photo 1</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas obcaecati blanditiis magnam quis eos eius, quisquam neque sint perspiciatis facere dolore est dolorem officia cum, quibusdam sit dicta molestias magni!</p></div>
+</div>
+<img src="https://th.bing.com/th/id/OIP.IeU2Xsu_Gs6XciXJaqSwCAHaFh?pid=ImgDet&rs=1">
+<div class="caption"><h2>Photo 2</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas obcaecati blanditiis magnam quis eos eius, quisquam neque sint perspiciatis facere dolore est dolorem officia cum, quibusdam sit dicta molestias magni!</p></div>
+</div>
+<img src="https://64.media.tumblr.com/8c6fa76eedc34232c5740eb23302a1cc/bd75d3503a02f186-52/s640x960/786e65b64906e037f5ed26f655154b59babe6ff7.jpg">
+<div class="caption"><h2>Photo 3</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas obcaecati blanditiis magnam quis eos eius, quisquam neque sint perspiciatis facere dolore est dolorem officia cum, quibusdam sit dicta molestias magni!</p></div>
+</div>
+<img src="https://th.bing.com/th/id/R.a46958dbe8f7dcc938a1f221c10d3150?rik=bBjOoJP5GrSa7A&riu=http%3a%2f%2fwww.arboretum.sav.sk%2ffiles%2fimage%2fFOTO_GENOFOND%2fRHODOTYPOS-RIBES-ROBINIA%2fRhus_potaninii1.jpg&ehk=LWIhLEhSXfomNyo7xXiq3fJ%2bCcBvfG32h2Q4C8ookCc%3d&risl=&pid=ImgRaw&r=0">
+<div class="caption"><h2>Photo 4</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas obcaecati blanditiis magnam quis eos eius, quisquam neque sint perspiciatis facere dolore est dolorem officia cum, quibusdam sit dicta molestias magni!</p></div>
+</div>
+
+</main>
+<footer>
+    <h3>Get in touch</h3>
+    <p>email or call us to set up</p>
+    <p>Email:<strong>contact@myphotographyproject.test</strong></p>
+    <p>Phone:<a href="+3597778888888888"><strong>(+359)55555-5555</strong></a></p>
+</footer>
+
+</body>
+</html>
